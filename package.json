@@ -1,0 +1,22 @@
+{
+  "name": "e-sports-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:nataliauai/e-sports-api.git",
+  "author": "natpe <natpereira94@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon ./src/server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "nodemon": "^2.0.21",
+    "pg": "^8.10.0",
+    "reflect-metadata": "^0.1.13",
+    "sucrase": "^3.29.0",
+    "typeorm": "^0.3.12",
+    "yup": "^1.0.2"
+  }
+}
