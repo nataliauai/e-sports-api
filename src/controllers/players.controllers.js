@@ -5,8 +5,8 @@ import listSinglePlayerService from "../services/jogador/listSinglePlayer"
 
 
 const createPlayerController = async (req, res) => {
-    const [status, data] = await createPlayerService(req.body)
-   return res.status(status).json(data)
+    const [status, returned] = await createPlayerService(req.body)
+   return res.status(status).json(returned)
 }
 
 const listPlayerController = async (req, res) => {
@@ -24,11 +24,6 @@ const deletePlayerController = async (req, res) => {
     return res.status(status).json(data)
 }
 
-
-const listPlayerbyTeamController = async (req, res) => {
-    const [status, data] = await listProductsCategoryService(req.params.id)
-    return res.status(status).json(data)
-}
 
 
 export {createPlayerController, deletePlayerController, listPlayerController, listSinglePlayerController}

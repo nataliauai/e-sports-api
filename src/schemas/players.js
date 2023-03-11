@@ -3,7 +3,7 @@ import * as yup from 'yup'
 const createPlayerSchema = yup.object().shape({
     name: yup.string().required(),
     age: yup.number().required(),
-    team_id: yup.string().required()
+    time_id: yup.string().required()
 })
 
 const playerReturnSchema = yup.object().shape({
